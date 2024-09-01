@@ -25,6 +25,7 @@ ___
 ___
 #### My latest projects:
 * [https://pixelGoblin.github.io/rsschool-cv/cv](https://pixelGoblin.github.io/rsschool-cv/cv)
+
 ___
 #### Education:
 * **HSE (2013 - 2015):**
