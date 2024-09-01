@@ -1,1 +1,1 @@
-# rsschool-cv
+[https://pixelGoblin.github.io/rsschool-cv/cv](https://pixelGoblin.github.io/rsschool-cv/cv)
