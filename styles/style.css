@@ -130,12 +130,18 @@
     font-style: normal;
 } */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px) {
     html {
         font-size: 0.8em;
+        color: black;
     }
     .aside {
         width: 15vw;
+    }
+
+    .bg-image {
+        background-size: cover;
+        background-position: 25% 0%;
     }
 }
 
@@ -145,6 +151,9 @@
     }
     .aside {
         width: 30vw;
+    }
+    .bg-image {
+        background-size: 100%;
     }
 }
 
@@ -251,10 +260,51 @@ a {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+    /* background-image: url(../pictures/BG/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; */
+    background-color: #3b3b3b; 
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100vw;
+    /* min-height: 100vh; */
+    background-image: url(../pictures/BG/BG.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-color: #3b3b3b; */
+    /* box-shadow: 0 -200px 10px 5px #ffffff inset; */
+}
+
+.bg-color {
+    --top-margin: calc(100vw * 0.5635);
+    position: absolute;
+    top: var(--top-margin);
+    /* top: 100vw; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    min-height: 100vh;
+    background-color: #3b3b3b;
+    box-shadow: 0 0 10px 15px #3b3b3b;
+}
+
+#container__main {
+    z-index: 5;
+    padding: 5em;
+    color: red;
 }
 
 .aside {
-    background-color: #1d5fe3;
+    z-index: 6;
+    background-color: transparent; /* #1d5fe3; */
     color: var(--font-color);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -264,6 +314,7 @@ a {
     width: 27vw;
     max-width: 30vw;
     min-width: 270px;
+    backdrop-filter: blur(2px);
 }
 
 .aside__inner {
